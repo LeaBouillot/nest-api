@@ -21,7 +21,7 @@ export class MoviesController {
     return this.moviesService.getAll();
   }
 
-  @Get('/:id')
+  @Get(':id')
   getById(@Param('id') id: number): Movie {
     return this.moviesService.getById(id);
   }
